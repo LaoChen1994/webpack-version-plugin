@@ -1,6 +1,6 @@
 {
   "name": "webpack-version-generation-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./lib/index.js",
   "repository": "git@github.com:LaoChen1994/webpack-version-plugin.git",
   "author": "chenyixiang <chenyixiang_cyx@youzan.com>",
