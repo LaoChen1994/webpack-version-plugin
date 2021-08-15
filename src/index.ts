@@ -12,7 +12,7 @@ const STATIC_FILE_TYPE = {
   STATIC_FILE: 'static',
 };
 
-class VersionPlugin extends BaseVersion {
+class VersionPlugin {
   private jsPublicPath: string;
   private cssPublicPath: string;
   private localPath: string;
@@ -23,7 +23,6 @@ class VersionPlugin extends BaseVersion {
   private cssVersionPath: string;
 
   constructor(props: IOptions) {
-    super(props)
     const {
       jsPublicPath = '',
       cssPublicPath = '',
@@ -80,6 +79,7 @@ class VersionPlugin extends BaseVersion {
         const chunkName = chunk.name;
 
         chunk.files.forEach((filename: string) => {
+          console.log('this ->', this)
           const { type, path: _staticPath } = this.getStaticPath(filename);
           switch (type) {
             case STATIC_FILE_TYPE.JS:
@@ -119,4 +119,4 @@ class VersionPlugin extends BaseVersion {
   }
 }
 
-export = VersionPlugin;
+export default { VersionPlugin, GEN_MODE };

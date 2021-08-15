@@ -3,6 +3,8 @@ import { terser } from "rollup-plugin-terser";
 import fileSize from 'rollup-plugin-filesize'
 import path from "path";
 
+const extensions = ['.ts', '.js', '.d.ts']
+
 export default {
   input: "./src/index.ts",
   output: {
@@ -11,7 +13,7 @@ export default {
   },
   plugins: [
     typescript({
-      tsBuildInfoFile: path.resolve(__dirname, "./tsconfig.json"),
+      module: 'esnext'
     }),
     terser(),
     fileSize()

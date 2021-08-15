@@ -1,5 +1,5 @@
 {
-  "name": "webpack-version-plugin",
+  "name": "webpack-version-generation-plugin",
   "version": "1.0.0",
   "main": "./lib/index.js",
   "repository": "git@github.com:LaoChen1994/webpack-version-plugin.git",
@@ -19,6 +19,8 @@
     "webpack": "^5.50.0"
   },
   "devDependencies": {
+    "rollup": "^2.56.2",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-terser": "^7.0.2"
   }
 }
