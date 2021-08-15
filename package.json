@@ -1,0 +1,24 @@
+{
+  "name": "webpack-version-plugin",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "repository": "git@github.com:LaoChen1994/webpack-version-plugin.git",
+  "author": "chenyixiang <chenyixiang_cyx@youzan.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/chalk": "^2.2.0",
+    "@types/webpack": "^5.28.0",
+    "chalk": "^4.1.2",
+    "rollup-plugin-filesize": "^9.1.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
