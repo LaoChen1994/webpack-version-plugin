@@ -9,7 +9,7 @@ export default {
   input: "./src/index.ts",
   output: {
     dir: path.resolve(__dirname, "./lib"),
-    format: "cjs",
+    format: "cjs"
   },
   plugins: [
     typescript({

@@ -119,4 +119,4 @@ class VersionPlugin {
   }
 }
 
-export default { VersionPlugin, GEN_MODE };
+export { VersionPlugin, GEN_MODE };

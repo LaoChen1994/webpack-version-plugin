@@ -16,8 +16,4 @@ declare class VersionPlugin {
     };
     apply(compiler: Compiler): void;
 }
-declare const _default: {
-    VersionPlugin: typeof VersionPlugin;
-    GEN_MODE: typeof GEN_MODE;
-};
-export default _default;
+export { VersionPlugin, GEN_MODE };
